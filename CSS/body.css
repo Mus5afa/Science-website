@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'Canela Deck';
+    src: url(/webfonts/CanelaDeck-Regular-Web.woff2) format('woff2');
+    font-weight:  400;
+    font-style:   normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'Canela Deck';
+    src: url(/webfonts/CanelaDeck-RegularItalic-Cy-Gr-Web.woff2) format('woff2');
+    font-weight:  400;
+    font-style:   italic;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'GT America';
+    src: url(/webfonts/GT-America-Standard-Regular.woff2) format('woff2');
+    font-weight:  400;
+    font-style:   normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'GT America';
+    src: url(/webfonts/GT-America-Standard-Medium.woff2) format('woff2');
+    font-weight: medium;
+    font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'GT America';
+    src: url(/webfonts/GT-America-Standard-Bold.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+/* *************************************** Fonts ⤴️ ************************************ */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* <!--******************** header ⤵️ ***********************--> */
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .video-background{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .video-background{
+        width: auto;
+        height: 100%;
+    }
+}
+@media (max-width: 450px){
+    .video-background{
+        aspect-ratio: 4/3;
+    }
+}
+
+/* <!--******************** Science Branches Section beginning ***********************--> */
+
+.container{
+    padding: 3.375rem;
+}
+.science-branches{
+    margin-top: 1rem;
+    margin-bottom: 1.333rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.subject-card{
+    width: 24%;
+    height: 26rem;
+    background-color: #b6b6b6;
+    border-radius: 5px;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    height: 60%;
+    object-fit: cover;
+}
+
+@media  (max-width: 970px){
+    .cards{
+        flex-wrap: wrap;
+    }
+    .subject-card{
+        width: 49%;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 600px){
+    .cards{
+        flex-direction: column;
+    }
+    .subject-card{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .card-img{
+        max-width: 100%;
+    }
+}
+
+.button{
+    background-color:blueviolet;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    color: #eee;
+    margin: .78rem 0 0 .3rem;
+}
+.discription{
+    font-size: large;
+    padding: .3rem;
+}
+.zainab{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .87rem;
+}
+.zainab img{
+    width: 50vh;
+    border-radius: 10px;
+}
+.words .first{
+    font-size: 2.3rem;
+
+}
+.second{
+    margin-top: 2.33rem;
+    font-style: italic;
+}
+@media screen and (max-width: 720px) {
+    .zainab{
+        flex-direction: column;
+    }
+    .zainab img{
+        width: 100%;
+    }
+    .words{
+        margin-top: 20px;
+    }
+    .second{
+        margin-top: 1rem;
+    }
+}
+/* <!--******************** Science Branches Section Ending⤴️ ***********************--> */
+
+hr{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 3px;
+    border: none;
+    border-radius: 50%;
+    width:70vw;
+    margin: 2vh auto;
+}
+
+/* <!--******************** LOs section beginning⤵️ ***********************--> */
+.column{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.Learning-outcomes{
+    margin-bottom: 1.333rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.subject > p{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.boxes p{
+    text-align: center;
+    background-color: #eee;
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.boxes p:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 590px){
+    .column{
+        flex-direction: column;
+    }
+    .subject > p{
+        padding-top: 3rem;
+    }
+}
+
+/* <!--******************** LOs section Ending ⤴️ ***********************--> */
+
+/* <!--******************** Teacher staff beginning⤵️ ***********************--> */
+
+.grand-parent{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.teacher{
+    width: 23%;
+    background-color: #eee;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 1rem;
+}
+@media (max-width: 842px){
+    .teacher{
+        width: calc((100% / 3) - 2%);
+    }
+}
+@media (max-width: 670px){
+    .teacher{
+        width: calc((100% / 2) - 2%);
+    }
+}
+@media (max-width: 450px){
+    .teacher{
+        width: 100%;
+    }
+}
+.teacher img{
+    width: 10rem;
+    border-radius: 50%;
+    margin: .8rem auto;
+}
+.teacher-details{
+    text-align: left;
+    margin: 0 .5rem;
+}
+
+.teacher-mail{
+    margin: 1rem 0 .5rem 26px;
+    position: relative;
+}
+.teacher-mail::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20px;
+    background-image: url(/files/mail.svg);
+    background-repeat: no-repeat;
+    margin-left: -25px;
+}
+/* <!--******************** Teacher staff Ending⤴️ ***********************--> */
